@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MundoMichi</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <meta name="keywords" content="Michi,Gatos,Mininos,Felinos,Adopciones">
+</head>
+<body>
+    <header>
+        <div class="miau">
+            <h1>💜🐈‍⬛ Mundo Michi 🐈‍⬛💜</h1>
+            <hr>
+            <br>
+        </div>
+    </header>
+
+    <main class="main-reg">
+        <img src="{% static 'img/GatitoSaludando.jpg' %}" alt="Michi Saludando" class="img-ali">
+        <section class="formulario-log-reg">
+
+            <h2>Iniciar sesión</h2>
+            <form action="{% url 'login' %}" method="POST" class="form-log-reg">
+                {% csrf_token %}
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" class="caja-busqueda" id="username" placeholder="Nombre de Usuario" name="username" required>
+                <br>
+                <br>
+                <label for="password">Contraseña:</label>
+                <input type="password" class="caja-busqueda" id="password" placeholder="Contraseña" name="password" required>
+                <br>
+                <br>
+                <button type="submit" class="boton-busqueda">Iniciar sesión</button>
+            </form>
+        </section>
+    </main>
+
+    <aside class="alim">
+        <h4>😸¿Aún no tienes cuenta? <a href="{% url 'register' %}">Registrate Aquí😸</a></h4>
+    </aside>
+
+    <footer>
+        <adress>
+            <p><b>Desarrollado por:</b> Evelyn Garza, Omar López & Mia Mendoza</p>
+            <p><b>Derechos Reservados &copy;</b></p>
+        </adress>
+        <p><time datetime="2024/11/08T09:52"><i>Página creada el 08 de Noviembre de 2024</i></time></p>
+    </footer>
+</body>
+</html>

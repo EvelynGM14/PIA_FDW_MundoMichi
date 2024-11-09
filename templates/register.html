@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Mundo Michi</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <header>
+        <div class="miau">
+            <h1>💜🐈‍⬛ Mundo Michi 🐈‍⬛💜</h1>
+            <hr>
+            <br>
+        </div>
+    </header>
+
+    <main class="main-reg">
+        <img src="{% static 'img/GatoLenguita.jpg' %}" alt="Michi Sacando Lengua" class="img-ali">
+        <section class="formulario-log-reg">
+            <h2 style="text-align: center; font-size: 25px;">Registrarse</h2>
+            <form action="{% url 'register' %}" method="POST" class="form-log-reg">
+                {% csrf_token %}
+                
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" class="caja-busqueda" id="username" placeholder="Nombre de Usuario" name="username" required>
+                <br>
+                <br>
+                
+                <label for="password1">Contraseña:</label>
+                <input type="password" class="caja-busqueda" id="password1" placeholder="Contraseña" name="password1" required>
+                <br>
+                <br>
+                
+                <label for="password2">Confirmar contraseña:</label>
+                <input type="password" class="caja-busqueda" id="password2" placeholder="Confirmar Contraseña" name="password2" required>
+                <br>
+                <br>
+                
+                <button type="submit" class="boton-busqueda">Registrarse</button>
+        
+                <p>¿Ya tienes cuenta? <a href="{% url 'login' %}">Inicia sesión aquí</a></p>
+            </form>
+            <br>
+            <br>
+        </section>
+        
+    </main>
+
+    <footer>
+        <adress>
+            <p><b>Desarrollado por:</b> Evelyn Garza, Omar López & Mia Mendoza</p>
+            <p><b>Derechos Reservados &copy;</b></p>
+        </adress>
+        <p><time datetime="2024/11/09T02:07"><i>Página creada el 09 de Noviembre de 2024</i></time></p>
+    </footer>
+
+    <script>
+        document.querySelector(".register-form").addEventListener("submit", function(event) {
+            var password = document.querySelector("#password").value;
+            var confirmPassword = document.querySelector("#confirm-password").value;
+    
+            if (password !== confirmPassword) {
+                event.preventDefault();  // Evita el envío del formulario
+                alert("Las contraseñas no coinciden");
+            }
+        });
+    </script>
+</body>
+</html>

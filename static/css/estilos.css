@@ -393,6 +393,7 @@ iframe {
     font-family: 'Times New Roman', Times, serif;
     font-size: 26px;
 }
+
 .formulario {
     background-color: rgb(130, 61, 134);
     padding: 17px;
@@ -435,4 +436,42 @@ fieldset {
 
 legend {
     font-weight: bold;
+}
+
+.formulario-log-reg {
+    margin-top: 0;
+
+}
+
+.form-log-reg {
+    background-color: rgb(130, 61, 134);
+    padding: 17px;
+    border-radius: 26px;
+    font-size: 17px;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px; /* Ancho máximo del formulario */
+    border: 4px solid #a00093; /* Opcional: bordes para el formulario */
+    box-shadow: 0 17px 8px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.formulario-log-reg h2 {
+    margin-top: 30px; /* Elimina cualquier margen superior del encabezado */
+    margin-bottom: 20px; /* Espacio mínimo debajo del encabezado */
+    text-align: center;
+    font-size: 25px;
+    margin-left: 110px;
+    margin-right: 0;
+}
+
+.main-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Ocupa el 100% de la altura de la ventana */
+    margin: 0;
+    padding: 0;
 }
