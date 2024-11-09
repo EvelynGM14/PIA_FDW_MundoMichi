@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentación</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <meta name="keywords" content="Michi,Gatos,Mininos,Felinos,Adopciones">
+</head>
+<body>
+    <script src="{% static 'js/busqueda.js' %}"></script>
+    <header>
+        <div>
+            <h1>💜🐈‍⬛ Mundo Michi 🐈‍⬛💜</h1>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Inicio</a></li>
+                    <li><a href="{% url 'TiposDeGatos' %}">Tipos de Gatos</a></li>
+                    <li><a href="{% url 'Alimentacion' %}">Alimentacion</a></li>
+                    <li><a href="{% url 'Cuidado' %}">Cuidado</a></li>
+                    <li><a href="{% url 'Adopcion' %}">Adopcion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="busqueda">
+            <input type="text" class="caja-busqueda" id="buscar" placeholder="Buscar...">
+            <button class="boton-busqueda" id="btnBuscar">Buscar</button> 
+        </div>
+    </header>
+
+    <main class="ali">
+        <section class="ali2">
+            <article>
+                <h2><i>Alimentación felina</i></h2>
+                <p>Una alimentación equilibrada, variada y adecuada a la especie contribuye en gran medida a mantener la salud de tu querido minino. Es importante tener en cuenta que gran parte de lo que consumimos los humanos no es adecuado para la alimentación del gato, <b><em>incluso en algunos casos es dañino.</em></b></p>
+            </article>
+            <hr>
+
+            <div class="img-texto-ali">
+                <img src="{% static 'img/PerroyGatoComiendo.avif' %}" alt="Comida de perro para gato?" class="img-ali">
+                <div class="img-texto-body-ali">
+                    <h3>¿Es mala la comida de perros para gatos?</h3>
+                    <blockcuote cite="https://www.zooplus.es/magazine/gatos/alimentacion-del-gato/es-mala-la-comida-de-perros-para-gatos">
+                        <p>Los perros y los gatos son animales muy diferentes y así lo son también sus necesidades nutricionales. Si tu minino come algo de la comida de tu can una vez, es posible que te preguntes si es mala la comida de perros para gatos. No te preocupes demasiado, pero si lo hace con frecuencia puede tener serias consecuencias para la salud. Por lo tanto, es importante evitar esto a toda costa.</p>
+                        <p>Los gatos deben ingerir la comida especialmente preparada para ellos y, además, que sea de buena calidad. Esto es así porque <b>los gatos necesitan un alimento rico en proteínas y con suficiente cantidad del aminoácido taurina</b>, que los felinos no generan por sí mismos. En cambio, los perros sí la producen, sin embargo, no toleran tan bien la proteína.</p>
+                    </blockcuote>
+                </div>
+            </div>
+            <hr>
+
+            <div class="img-texto-ali">
+                <img src="{% static 'img/TomandoLeche.jpg' %}" alt="Gato tomando leche" class="img-ali">
+                <div class="img-texto-body-ali">
+                    <h3>¿Los gatos pueden beber leche?</h3>
+                    <blockcuote cite="https://www.zooplus.es/magazine/gatos/alimentacion-del-gato/leche-para-gatos-si-o-no">
+                        <p>Los gatitos se alimentan con leche materna. Durante el <b>periodo de amamantamiento</b> los gatos pueden beber leche porque su cuerpo produce <b>la encima lactasa</b>, imprescindible para el proceso de conversión del azúcar de la leche (lactosa). Esta hace que los gatitos puedan tolerar bien la leche. Durante el desarrollo, los pequeños bigotudos necesitan todos los nutrientes que se encuentran en la leche materna para crecer sanos y fuertes. Por eso su metabolismo produce la encima lactasa para poder digerir la leche. A lo largo de su desarrollo, los gatitos cambian de una alimentación líquida a la comida sólida, por lo que, poco a poco, la madre deja de producir leche. Esto hace que la producción de lactasa también vaya disminuyendo y los pequeños felinos <mark><b>dejan de digerir bien la leche</b></mark>. Incluso si ha sido diluida con agua puede causar problemas. Por lo tanto, no se recomienda dar leche a los gatos, a pesar de que les guste mucho.</p>
+                    </blockcuote>
+                </div>
+            </div>
+            <hr>
+
+            <div class="img-texto-ali">
+                <img src="{% static 'img/GatoRascandose.jpg' %}" alt="Gato Rascandose" class="img-ali">
+                <div class="img-texto-body-ali">
+                    <h3>Alergía alimentaria en gatos</h3>
+                    <blockcoute cite="https://www.zooplus.es/magazine/gatos/alimentacion-del-gato/alergia-alimentaria-en-gatos">
+                        <p>¿Tu gato tiene picor? ¿Vomita mucho últimamente o tiene diarrea? Quizá tenga incluso una combinación de todos estos síntomas. En ese caso, la causa podría ser una <b>alergia alimentaria</b>. Te enseñamos a detectar los signos de una alergia alimentaria en gatos y cómo ayudar a tu minino.</p>
+                        <p>Una alergia es una reacción exacerbada del sistema inmunitario a sustancias inocuas. El cuerpo produce anticuerpos contra estas sustancias, los alérgenos. Al entrar de nuevo en contacto con el alérgeno (por ejemplo, proteína de pollo o saliva de pulga), el cuerpo produce un complejo a partir del alérgeno y el anticuerpo. Este, a su vez, provoca los síntomas de la alergia.</p>
+                        <p>En teoría, cualquier sustancia con la que el gato entre en contacto interna o externamente puede ocasionar una reacción alérgica. Sin embargo, el requisito es que ya tuviera contacto alguna vez con el alérgeno.</p>
+                        <p>En el caso de una alergia alimentaria en gatos, suele tratarse de una fuente de proteínas o carbohidratos que el gato de pronto ya no tolera. Es posible que tolere su comida preferida durante años y que, de repente, desarrolle una alergia.</p>
+                        <p><i><mark><b>Los alérgenos más frecuentes son estos:</b></mark></i></p>
+                    </blockcoute>
+                    <ul class="sin-punto">
+                        <li>🐾 Pescado</li>
+                        <li>🐾 Carne de vacuno</li>
+                        <li>🐾 Productos lácteos</li>
+                        <li>🐾 Carne de pollo</li>
+                        <li>🐾 Carne de cordero y maíz</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <article>
+                <h2 style="font-size: 25px;">Croquetas recomendadas para tu felino 🐈</h2>
+                <figure>
+                    <abbr title="Ir a minino.com"><a href="https://www.minino.com/productos-categoria/alimento-seco/" target="_blank"><img src="{% static 'img/AlimentoMinino.png' %}" alt="Alimento Marca Minino" class="img-minino"></a></abbr>
+                    <figcaption style="font-size: 17px;"><b>Alimento Marca Minino&reg</b></figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <aside class="alim">
+        <h4>😸Más información sobre croquetas para tu gatito😸</h4>
+        <div class="embed-alim">
+            <iframe src="https://www.petlife.mx/alimentacion/2023/7/8/que-tan-recomendable-es-el-alimento-para-gatos-minino-segun-la-profeco-1053.html" frameborder="0"></iframe>
+            <embed src="https://vetpoblenou.com/blog/wp-content/uploads/2017/04/La-alimentaci%C3%B3n-de-su-gato-o-gatito.pdf" type="application/pdf">
+            <video controls src="videos/Mejores croquetas para gato.mp4"></video>
+        </div>
+    </aside>
+
+    <footer>
+        <adress>
+            <p><b>Desarrollado por:</b> Evelyn Garza, Omar López & Mia Mendoza</p>
+            <p><b>Derechos Reservados &copy;</b></p>
+        </adress>
+        <p><time datetime="2024/08/23T11:52"><i>Página creada el 14 de Septiembre de 2024</i></time></p>
+    </footer>
+</body>
+</html>

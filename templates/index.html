@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MundoMichi</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <meta name="keywords" content="Michi,Gatos,Mininos,Felinos,Adopciones">
+</head>
+<body>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/busqueda.js' %}"></script>
+    <header>
+        <div class="miau">
+            <h1>💜🐈‍⬛ Mundo Michi 🐈‍⬛💜</h1>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Inicio</a></li>
+                    <li><a href="{% url 'TiposDeGatos' %}">Tipos de Gatos</a></li>
+                    <li><a href="{% url 'Alimentacion' %}">Alimentacion</a></li>
+                    <li><a href="{% url 'Cuidado' %}">Cuidado</a></li>
+                    <li><a href="{% url 'Adopcion' %}">Adopcion</a></li>
+                </ul>
+            </nav>
+        </div>
+            <div class="busqueda">
+                <input type="text" class="caja-busqueda" id="buscar" placeholder="Buscar...">
+                <button class="boton-busqueda" id="btnBuscar">Buscar</button> 
+            </div>
+    </header>
+
+    <main class="miau">
+        <section class="miau2">
+            <article>
+                <h2><i>¡Bienvenido al mundo de los mininos!</i></h2>
+                <img src="{% static 'img/GatitosBebé.jpg' %}" alt="Gatitos Bebé En El Pasto">
+
+                <p>Descubre el mundo mágico de los gatitos en <mark>MUNDO MICHI.</mark> Te ofrecemos una mezcla única de información y una gran dosis de ternura felina. Ya sea que estés buscando adoptar, aprender más sobre mininos, o simplemente disfrutar de las fotos más adorables, ¡estás en el lugar correcto! Déjate conquistar por los gatitos más lindos de internet.</p>
+                <p><b>Si quieres saber más sobre los comportamientos más comunes en esta especie, <span style="color: rgb(156, 37, 156);">este artículo es para ti.</span></b></p>
+                <hr>
+                <ol>
+                    <li>Los gatos prefieren las alturas.</li>
+                    <p>A los gatos les encanta las alturas, así que prepárate para encontrarlo encima de mesas o estanterías. Con un poco de imaginación y un toque de bricolaje puedes crear una divertidas estanterías por las que trepará y verá el mundo desde otra perspectiva.</p>
+
+                    <li>Juegan al escondite.</li>
+                    <p>A los gatos les encanta “esconderse” para descansar. No hay gato que pueda resistirse a un cajón abierto o al fondo del armario. Posiblemente esta conducta se deba a la necesidad de sentirse seguros cuando descansan.</p>
+
+                    <li>Los gatos son unos dormilones.</li>
+                    <p>Pueden llegar a dormir unas 16 horas al día, pero eso si, repartidas durante todo el día en formato siesta.</p>
+
+                    <li>Dejan su aroma.</li>
+                    <p>Cuando se rozan contigo o con los muebles, en realidad lo que hacen es impregnar con su olor el entorno para sentirse más seguro.</p>
+
+                    <li>Dulces ronroneos.</li>
+                    <p>Los solemos identificar siempre con un buen estímulo, pero debes saber que también pueden ronronear cuando se encuentran enfermos o doloridos.</p>
+
+                    <li>El maullido, su señal.</li>
+                    <p>El maullido del gato es muy diverso y no tiene sólo un sentido, los gatos pueden maullar para llamar tu atención por ejemplo cuando tiene hambre o cuando está atrapado, sin embargo, los gatos adultos pueden llegar a utilizar un código de comunicación única entre el dueño y él mismo.</p>
+
+                    <li>Jugar cazando.</li>
+                    <p>Les encanta jugar, su juego favorito está relacionado con la caza: perseguir una pelota, atrapar un cordel, sacar un juguete de debajo del sofá, golpear con las patas traseras un peluche y…, sobre todo cuando hay pocas ocasiones de juego, acechar y perseguir la primera persona que pasa delante de su escondite.</p>
+
+                    <li>Limpios con sus cosas.</li>
+                    <p>Los verás enterrando sus deposiciones con el sustrato muy limpiamente en su bandeja, pero… ¡cuidado!, la tierra de las macetas puede ser un lugar tremendamente apetecible para hacer sus cositas.</p>
+
+                    <li>La vida amasando.</li>
+                    <p>Lo hacían con su madre cuando estaban siendo amamantados y siguen haciéndolo cuando son adultos. Normalmente utilizan superficies blandas y alguna que otra vez tu cuerpo. Es una experiencia genial.</p>
+
+                    <li>Pero mira como beben</li>
+                    <p>Los verás beber del plato de la maceta, del lavabo o de un grifo abierto, puede que no beban del bebedero que le has preparado si está muy cerca de la comida o de la gatera.</p>
+                    <p><b>¿Verdad que son todo un mundo?</b>, la mayoría de estos comportamientos los experimentarás en tu propia cuenta y otros tantos puede que no los hagan aunque en su gran mayoría, son comportamientos muy comunes. Si tu gato tiene otras conductas curiosas propias de la especie no dudes en <a href="#Contacto">dárnoslo a conocer</a>. Esperamos que te haya servido de ayuda y que puedas aclarar algunas dudas que puedan surgir sobre estos misteriosos y bellos animalitos.</p>
+                </ol>
+            </article>
+        </section>
+
+        <aside class="barralat">
+            <h2><i>Te puede interesar</i></h2>
+            <a href="https://www.infobae.com/mascotas/2023/05/25/la-historia-del-gato-ciego-que-vagaba-por-las-calles-en-busca-de-un-amigo/#:~:text=Un%20gato%20anaranjado%20ciego%20cumpli%C3%B3,le%20pudiera%20cambiar%20la%20vida." target="_blank">Historia de superación de un gatito ciego.</a>
+
+            <a href="https://banapar.org/que-hacer-al-rescatar-un-gato-bebe/#:~:text=Si%20te%20encuentras%20con%20una,seguridad%20de%20volver%20por%20ellos." target="_blank">¿Qué hacer al rescatar a un gatito bebé?</a>
+
+            <a href="https://unsplash.com/es/s/fotos/memes-de-gatos-graciosos" target="_blank">Imágenes graciosas de gatos.</a>
+
+            <a href="https://www.petys.com/blog-de-expertos/4-razones-por-las-que-tu-gato-duerme-encima-de-ti/#:~:text=Dormir%20sobre%20su%20due%C3%B1o%20es,nosotros%20es%20una%20de%20ellas." target="_blank">Razones por las que tu gato duerme encima de ti.</a>
+
+            <a href="https://www.clarin.com/viste/historia-bob-gato-salvo-vida-musico-james-bowen-inspiro-libros-peliculas_0_L1JZMlxkY.html#:~:text=Aquel%20d%C3%ADa%20de%202007%2C%20James,y%20otra%20serie%20de%20publicaciones." target="_blank">La historia de Bob, el gato que inspiró libros y películas al salvar la vida de un músico.</a>
+            <hr>
+            <h2 id="Contacto"><i>Contacto</i></h2>
+            <a href="mailto:MundoMichi@felinosdelmundo.com">Envíanos tus ideas 💌</a>
+            <a href="tel:3131001417">¿No sabes a quién acudir? Llámanos 📞🐈‍⬛</a>
+            <p><b>Horario de atención</b></p>
+            <p><i>Lun a vier de 8am a 8pm</i></p>
+        </aside>
+    </main>
+
+    <footer>
+        <adress>
+            <p><b>Desarrollado por:</b> Evelyn Garza, Omar López & Mia Mendoza</p>
+            <p><b>Derechos Reservados &copy;</b></p>
+        </adress>
+        <p><time datetime="2024/08/21T11:00"><i>Página creada el 21 de Agosto de 2024</i></time></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos De Gatos</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <meta name="keywords" content="Michi,Gatos,Mininos,Felinos,Adopciones">
+</head>
+<body>
+    <script src="{% static 'js/busqueda.js' %}"></script>
+   <header>
+    <div>
+        <h1>💜🐈‍⬛ Mundo Michi 🐈‍⬛💜</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'TiposDeGatos' %}">Tipos de Gatos</a></li>
+                <li><a href="{% url 'Alimentacion' %}">Alimentacion</a></li>
+                <li><a href="{% url 'Cuidado' %}">Cuidado</a></li>
+                <li><a href="{% url 'Adopcion' %}">Adopcion</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="busqueda">
+        <input type="text" class="caja-busqueda" id="buscar" placeholder="Buscar...">
+        <button class="boton-busqueda" id="btnBuscar">Buscar</button> 
+    </div>
+   </header> 
+
+   <main class="miau">
+    <section class="miau2">
+        <article>
+            <h2><i>Tipos De Gatos</i></h2>
+            <p>Conoceremos algunas de las características de las razas de los gatos y también conoceremos al <a href="#Chero"><i>gato que fue la inspiración</i></a> para la creación de esta página.</p>
+        </article>
+        <hr>
+
+        <div class="img-texto">
+            <img src="{% static 'img/AzulRuso.jpg' %}" alt="Azul Ruso" class="img">
+            <div class="img-texto-body">
+                <h3>Azul Ruso</h3>
+                <p>El gato <b>Azul Ruso</b> es sin duda uno de los felinos más populares y hermosos. Si estás pensando en adoptar a un gato de esta raza será conveniente que te informes antes acerca de su carácter, del cuidado del pelo o de las características que posee.</p>
+                <p>🌏 <b>Orígen:</b> Asia y Rusia.</p>
+                <p>🐈 <b>Tamaño:</b> Mediano.</p>
+                <p>🪮 <b>Tipo de pelo:</b> Corto.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="img-texto">
+            <img src="{% static 'img/Bengalí.jpg' %}" alt="Gato Bengalí" class="img">
+            <div class="img-texto-body">
+                <h3>Bengalí</h3>
+                <p>El gato de <b>Bengala o gato bengalí</b> es un híbrido que nace entre el cruce un gato doméstico y un gato leopardo (felino asiático que aún se encuentra en estado salvaje), por ese motivo muchas personas se preguntan hoy en día si el gato de Bengala es un felino salvaje.</p>
+                <p>🌎 <b>Orígen:</b> América y Estados Unidos.</p>
+                <p>🐈 <b>Tamaño:</b> Grande.</p>
+                <p>🪮 <b>Tipo de pelo:</b> Corto.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="img-texto">
+            <img src="{% static 'img/Bombay.avif' %}" alt="Gato Bombay" class="img"> 
+            <div class="img-texto-body">
+                <h3>Bombay</h3>
+                <p>El gato <b>Bombay</b> es sin duda una de las razas de gatos más populares y hermosas que existen. Si estás pensando en adoptar un gato de esta raza no dudes en informarte apropiadamente acerca de todas sus características, el carácter que suele tener así como los cuidados básicos que requiere.</p>
+                <p>🌎 <b>Orígen:</b> América y Estados Unidos.</p>
+                <p>🐈 <b>Tamaño:</b> Mediano.</p>
+                <p>🪮 <b>Tipo de pelo:</b> Corto.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="img-texto">
+            <img src="{% static 'img/Himalayo.webp' %}" alt="Gato Himalayo" class="img">
+            <div class="img-texto-body">
+                <h3>Himalayo</h3>
+                <p>El gato <b>Himalayo</b> es un cruce entre el persa, de quien ha desarrollado sus características físicas y del siamés, de quien ha heredado el patrón característico. La combinación de estos dos predecesores nos ofrece un gato único y elegante.</p>
+                <p>🌍 <b>Orígen:</b> Europa, Reino Unido y Suecia.</p>
+                <p>🐈 <b>Tamaño:</b> Mediano.</p>
+                <p>🪮 <b>Tipo de pelo:</b> Largo.</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="img-texto" id="Chero">
+            <img src="{% static 'img/Chero guapo.jpeg' %}" alt="Chero" class="img">
+            <div class="img-texto-body">
+                <h3>Mestizo</h3>
+                <p>Este gatito lleva por nombre <b>Chero</b> y fue la mayor inspiración para dedicarle este espacio a los mininos y todo lo que les rodea. Siempre fue un excelente compañero y miembro esencial de la familia.</p>
+                <p><small><i>En memoria a él, abrazo hasta el cielo, <b>amado Chero</b>.</i></small></p>
+                <p>🌎 <b>Orígen:</b> América, México.</p>
+                <p>🐈 <b>Tamaño:</b> Mediano.</p>
+                <p>🪮 <b>Tipo de pelo:</b> Largo.</p>
+            </div>
+        </div>
+    </section>
+    <aside class="barralat">
+        <h2><i>¿Quieres conocer más?</i></h2>
+        <a href="https://www.zooplus.es/magazine/gatos/adoptar-un-gato/las-10-razas-de-gatos-mas-caras" target="_blank"><b>Las razas de gatos más caras del mundo.</b></a>
+
+        <a href="https://www.mundodeportivo.com/uncomo/animales/articulo/razas-de-gatos-atigrados-53464.html" target="_blank">10 razas de gatos atigrados.</a>
+
+        <a href="https://www.royalcanin.com/mx/cats/thinking-of-getting-a-cat/should-i-choose-a-pure-breed-or-mixed-breed-cat" target="_blank">¿Debo elegir un gato de raza pura o un mestizo?</a>
+
+        <a href="https://www.rover.com/es/blog/que-raza-es-mi-gato/" target="_blank">¿Cómo saber de que raza es mi gato?</a>
+        <hr>
+
+        <h2><i>Videos Relacionados</i></h2>
+        <iframe src="https://www.youtube.com/embed/HBvV9mLPjVc?si=Vg49wBPg50zys3pE" title="Las razas más bonitas del mundo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+
+        <iframe src="https://www.youtube.com/embed/KfCx8j6zMNw?si=4w92gL2d0I2JH55c" title="Las razas más grandes del mundo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/-7zJETua1jM?si=FtjYzRqXkeMPobMS" title="Las razas más pequeñas del mundo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </aside>
+   </main>
+   <footer>
+    <adress>
+        <p><b>Desarrollado por:</b> Evelyn Garza, Omar López & Mia Mendoza</p>
+        <p><b>Derechos Reservados &copy;</b></p>
+    </adress>
+    <p><time datetime="2024/08/22T11:40"><i>Página creada el 30 de Agosto de 2024</i></time></p>
+   </footer>
+</body>
+</html>
